@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    font-weight: 700;
+}
+ul li a:hover{
+    color: crimson;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 44%;
+
+}
+
+.container div {
+    margin: 10px auto;
+    width: 50%;
+    height: 80px;
+    background-color: blanchedalmond;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container li{
+    /* display: inline; */
+    list-style: none;
+}
+.container .btn{
+    height: 30px;
+    color: white;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+}

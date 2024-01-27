@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.inside{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    height: 120px;
+    margin: 30px auto;
+    background-color:aqua;
+}
+.inside button{
+    height: 34px;
+    width: 110px;
+    border-radius: 5px;
+    background-color: green   ;
+}
+.inside a{
+    color: white;
+    text-decoration: none;
+}
+
+.main h2{
+    font-size: 2rem;
+}
+.main h4{
+    font-size: 1.6rem;
+}

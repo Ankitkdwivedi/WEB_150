@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+            background-color: rgb(255,192,23);
+        }
+        .header div button{
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            /* width: 40px; */
+        }
+        .header div{
+            margin: 100px;
+        }
+        .header img{
+            height: 95px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="no-background"><img src="https://seeklogo.com/images/M/medium-2020-new-logo-4DD1CA1BFF-seeklogo.com.png" alt=""></div>
+        <div><button>Get Started</button></div>
+    </div>
+    <h1><%=singleBlog.name %></h1>
+    <h1><%=singleBlog.desc %></h1>
+    <img src="<%=singleBlog.img %>" alt="">
+</body>
+</html>

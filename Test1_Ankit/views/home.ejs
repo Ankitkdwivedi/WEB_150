@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Great Quotos</h1></div>
+        <ul>
+            <li><a href="/">All Quotos</a></li>
+            <li><a href="/new">Add New</a></li>
+        </ul>
+    </header>
+    <h1>All Quotes</h1>
+    <div class="container">
+        <% for(let item of data) {%>
+            <div class="inside">
+                <div class="main">
+                    <h2><%=item.quote%></h2>
+                    <h4>~&nbsp<%=item.username%></h4>
+                </div>
+                <div><button><a href="/show/<%= item.id %>">View Details</a></button></div>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

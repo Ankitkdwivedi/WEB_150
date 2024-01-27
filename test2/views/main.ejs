@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+            background-color: rgb(255,192,23);
+        }
+        .header div button{
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            /* width: 40px; */
+        }
+        .header div{
+            margin: 100px;
+        }
+        .header img{
+            height: 95px;
+            width: 100px;
+        }
+        .main{
+            margin:10px;
+        }
+        div{
+            display: inline-block;
+        }
+        .a{
+            margin: 0px 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .side button{
+        border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="no-background"><img src="https://seeklogo.com/images/M/medium-2020-new-logo-4DD1CA1BFF-seeklogo.com.png" alt=""></div>
+        <div><button>Get Started</button></div>
+    </div>
+    <div class="a">
+    <div class="main"> 
+    <% for(let item of allBlogs){ %>
+        <a href="/blogs/<%= item._id %>"><h1><%= item.name %></h1></a>
+        <h3><%= item.desc %></h3>
+        <a href="/blogs/<%= item._id %>"><img src="<%= item.img %>" alt=""></a>
+        
+    <% } %>
+    </div>
+    <div class="side">
+        <h3>Discover more </h3>
+        <button>programming</button>
+        <button>programming</button>
+        <button>programming</button>
+        <button>programming</button>
+        <button>data scice</button>
+        <button>sdf</button>
+        <button>lklf</button>
+        <button>flsf</button>
+    </div>
+</div>
+</body>
+</html>

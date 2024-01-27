@@ -1,0 +1,42 @@
+collection name is movie.
+
+
+1.List all the databases in your machine---> show databases(show dbs)
+
+2.create new database --> use gla(database){this db will not be visible in list of all dbs till db should have atleast one collection inside it}
+
+3.db.createCollection('collection ka name)--> will create a collection in current db and map it in the list of all dbs
+createCollection is a method 
+
+4.show collections --> will show all the collections in the current database.
+show collections is not a method
+
+5.db.dropDatabases --> to delete database permanantly
+
+6.exit--> get out from mongoshell
+
+--------------------------------CRUD-------------------------------
+use {} always beacuse they all accept objects
+
+7.db.movie.insertOne({})--->will give inserted id object id which will always unique amongest all over the worlds
+
+8.db.movie.find()---> can use {} or not it will return all the documents from the collections
+
+9.db.insetMany([{},{}]) will add alot of documents in one go
+
+
+chanhges the first occurance  only 
+10.db.movie.updateOne({},$set{{}})--> first object will find the particular object and second will update the values
+
+
+update all.
+11.db.movie.updateMany({},{})--> find all occurance and change it everywhere 
+
+12.db.movie.deleteOne()--> wrong hai
+
+13.db.movie.deleteOne({})--> will delete only one object first occurance
+
+------------------------------------Operators----------------------------------------
+14.gt -->{$gt:}
+
+$ in works in range 

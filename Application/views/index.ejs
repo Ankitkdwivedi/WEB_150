@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%for(let item of comments){%>
+        <h1 color="crimson"><%= item.id %></h1>
+        <h1 ><%= item.username %></h1>
+        <h2><%= item.comment %></h2>
+        <a href="/comments/<%= item.id %>">show this comment</a>
+        <a href="/comments/<%= item.id %>/edit">Edit </a>
+        <form action="/comments/<%= item.id %>?_method=Delete" method="post">
+        <button>Delete </button></form>
+
+        <br>
+    <% } %>
+</body>
+</html>
