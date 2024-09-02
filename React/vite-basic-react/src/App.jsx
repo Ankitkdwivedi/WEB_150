@@ -5,6 +5,9 @@ import './App.css'
 import Hello from './Components/Hello'
 import Mapp from './Components/Mapp'
 import Perso from './Components/Perso'
+import Count from './Components/Count'
+import Todo from './Components/Todo'
+import Better from './Components/Better'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +16,10 @@ function App() {
     <>
       {/* <Hello/>
       <Mapp/> */}
-      <Perso/>
+      {/* <Perso/> */}
+      {/* <Count/> */}
+      {/* <Todo/> */}
+      <Better/>
     </>
   )
 }
